@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<style>
+    * {
+        color: rgb(255, 245, 245);
+        background-color: rgb(1, 1, 1);
+        
+    }
+
+    form {
+        margin: 0px 20% 0px 20%;
+        padding: 20px;
+
+        box-shadow: rgb(173, 9, 6);
+
+    }
+</style>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="img/logo.svg" alt="logo" class="bg-warning rounded-start-pill"
+                    style="width: 70px;margin-right: 5px;">
+                <span>Developer</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#course" role="button" data-bs-toggle="dropdown">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#cours">HTML & CSS</a></li>
+                            <li><a class="dropdown-item" href="#course">BootStrap</a></li>
+                            <li><a class="dropdown-item" href="#course">Js & Jquiry</a></li>
+                            <li><a class="dropdown-item" href="#course">PhP & Laravel</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contect us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-40px">
+
+        <form action="">
+            <div>
+                <h1 class="text-center text-secondry">Registration Form</h1>
+            </div>
+
+            <label for="firstName" class="form-label">First Name:</label>
+            <input type="text" name="firstName" id="firstName" class="form-control" required>
+            <br>
+            <label for="lastName" class="form-label">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" class="form-control" required>
+            <br>
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+            <br>
+            <label for="phone" class="form-label">Phone No:</label>
+            <input type="tel" name="phone" id="phone" class="form-control" required>
+            <br>
+            <label for="country" class="form-label">Country</label>
+            <select id="country" name="country" class=" form-control">
+                <option class="dropdown-item" value="#">--------Select Country--------</option>
+                <option class="dropdown-item" value="canada">Pkistan</option>
+                <option class="dropdown-item" value="usa">USA</option>
+                <option class="dropdown-item" value="canada">canada</option>
+                <option class="dropdown-item" value="australia">Australia</option>
+                <option class="dropdown-item" value="sirilanka">Sirilanka</option>
+                <option class="dropdown-item" value="afganistan">Afganistan</option>
+            </select>
+              <br>
+              <label for="city" class="form-label">City:</label>
+            <select id="city" name="city" class=" form-control">
+                <option class="dropdown-item" value="#">--------Select City--------</option>
+                <option class="dropdown-item" value="lahore">lahore</option>
+                <option class="dropdown-item" value="Islamabad">Islamabad</option>
+                <option class="dropdown-item" value="Faslabad">Faslabad</option>
+                <option class="dropdown-item" value="Peshawar">Peshawar</option>
+                <option class="dropdown-item" value="Sialkott">Sialkott</option>
+                <option class="dropdown-item" value="Sindh">Sindh</option>
+            </select>
+              <br>
+            <label for="age" class="form-label">Age:</label>
+            <input type="number" name="age" id="age" class="form-control" required>
+            <br>
+            <div class="mb-3">
+                <label class="form-label d-block">Gender</label>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" value="male">
+                    <label class="form-check-label">Male</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" value="female">
+                    <label class="form-check-label">Female</label>
+                </div>
+
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-shine bg-warning">Register</button>
+            </div>
+
+        </form>
+    </div>
+    <!-- ================= CONTACT ================= -->
+
+    <section class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p>Email: muhammadali.dev01@gmail.com</p>
+            <p>Phone: +92-3074450095</p>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact" class="text-center bg-secondary text-white py-3">
+        <p class="mb-0">© 2026 Muhammad Ali | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
